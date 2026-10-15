@@ -1,6 +1,6 @@
 {
  "owner": "citoreh",
- "generated": "2026-10-15T04:10:16.636Z",
+ "generated": "2026-10-15T04:15:57.688Z",
  "count": 35,
  "repos": [
   {
@@ -10,7 +10,7 @@
    "category": "studio",
    "description": "Grows Islamic star patterns from a plain tiling. Two rays leave each edge midpoint and meet as stars; tune the contact angle, offset and rotation, then animate the construction.",
    "pageTitle": "",
-   "pageDescription": "",
+   "pageDescription": "Grow star patterns from a plain tiling. Two rays leave the middle of every edge; where they meet, a star forms.",
    "tags": [
     "web app",
     "canvas",
@@ -22,8 +22,8 @@
    "fork": false,
    "repo": "https://github.com/citoreh/angle",
    "live": "https://citoreh.github.io/angle/",
-   "thumb": null,
-   "shotAt": null
+   "thumb": "thumbs/angle.jpg",
+   "shotAt": "2026-10-15T04:14:12.020Z"
   },
   {
    "name": "Iqa",
@@ -32,7 +32,7 @@
    "category": "studio",
    "description": "Build rhythmic cycles from Arab, Turkish and Persian traditions on four drum lanes, write A, B and fill variations, and export audio or MIDI.",
    "pageTitle": "",
-   "pageDescription": "",
+   "pageDescription": "Build rhythmic cycles from the Arab, Turkish and Persian traditions on four lanes: lead drum, frame drum, finger cymbals and bass drum. Drag strokes onto the cycle, shape each hit's dynamics, write A, B and Fill…",
    "tags": [
     "web app",
     "audio",
@@ -44,8 +44,8 @@
    "fork": false,
    "repo": "https://github.com/citoreh/Iqa",
    "live": "https://citoreh.github.io/Iqa/",
-   "thumb": null,
-   "shotAt": null
+   "thumb": "thumbs/Iqa.jpg",
+   "shotAt": "2026-10-15T04:14:36.817Z"
   },
   {
    "name": "Specimen",
@@ -54,7 +54,7 @@
    "category": "studio",
    "description": "Turns one photo into a seamless liquid-warp loop with tracker labels and glitch bursts. Every term in the motion formula is a slider; exports MP4 or GIF.",
    "pageTitle": "",
-   "pageDescription": "",
+   "pageDescription": "Turn one photo into a seamless liquid-warp loop with a tracker-label overlay and glitch bursts. Every term in the movement formula is a slider. Exports MP4 or GIF.",
    "tags": [
     "web app",
     "video",
@@ -66,8 +66,8 @@
    "fork": false,
    "repo": "https://github.com/citoreh/Specimen",
    "live": "https://citoreh.github.io/Specimen/",
-   "thumb": null,
-   "shotAt": null
+   "thumb": "thumbs/Specimen.jpg",
+   "shotAt": "2026-10-15T04:15:23.068Z"
   },
   {
    "name": "synth",
@@ -76,7 +76,7 @@
    "category": "studio",
    "description": "Write y = f(x) and a dot sweeps along x, playing the curve's height as pitch. Layer equations like instruments and save MP4 or WAV.",
    "pageTitle": "",
-   "pageDescription": "",
+   "pageDescription": "Write y = f(x). A dot sweeps along x and plays the height y as pitch, the same trick as the graphing-calculator video. Click anywhere on the graph to play from that point.",
    "tags": [
     "web app",
     "audio",
@@ -88,8 +88,8 @@
    "fork": false,
    "repo": "https://github.com/citoreh/synth",
    "live": "https://citoreh.github.io/synth/",
-   "thumb": null,
-   "shotAt": null
+   "thumb": "thumbs/synth.jpg",
+   "shotAt": "2026-10-15T04:15:29.548Z"
   },
   {
    "name": "eproof",
@@ -104,7 +104,7 @@
     "ePub",
     "Persian"
    ],
-   "language": "HTML",
+   "language": "Python",
    "pushed": "2026-09-29",
    "pushedAt": "2026-09-29T12:36:14Z",
    "fork": false,
@@ -126,7 +126,7 @@
     "Python",
     "video"
    ],
-   "language": "HTML",
+   "language": "Python",
    "pushed": "2026-09-25",
    "pushedAt": "2026-09-25T22:37:56Z",
    "fork": true,
@@ -154,8 +154,8 @@
    "fork": false,
    "repo": "https://github.com/citoreh/film",
    "live": "https://citoreh.github.io/film/",
-   "thumb": null,
-   "shotAt": null
+   "thumb": "thumbs/film.jpg",
+   "shotAt": "2026-10-15T04:14:27.065Z"
   },
   {
    "name": "afarahani-com",
@@ -176,8 +176,8 @@
    "fork": false,
    "repo": "https://github.com/citoreh/afarahani-com",
    "live": "https://citoreh.github.io/afarahani-com/",
-   "thumb": null,
-   "shotAt": null
+   "thumb": "thumbs/afarahani-com.jpg",
+   "shotAt": "2026-10-15T04:14:09.001Z"
   },
   {
    "name": "films",
@@ -230,7 +230,7 @@
    "category": "cinema",
    "description": "Searches film lists harvested from 25 Persian YouTube channels and plays matches inline. One static page, no build step.",
    "pageTitle": "",
-   "pageDescription": "",
+   "pageDescription": "جست‌وجو در فیلم‌های آرشیو‌شده در فایل‌های CSV و پخش مستقیم از یوتیوب",
    "tags": [
     "web app",
     "YouTube",
@@ -242,8 +242,8 @@
    "fork": false,
    "repo": "https://github.com/citoreh/itube",
    "live": "https://citoreh.github.io/itube/",
-   "thumb": null,
-   "shotAt": null
+   "thumb": "thumbs/itube.jpg",
+   "shotAt": "2026-10-15T04:14:40.448Z"
   },
   {
    "name": "clip",
@@ -252,7 +252,7 @@
    "category": "ext",
    "description": "Keeps your last ten copied items and drops them into any field with one shortcut. Local-only and password-safe.",
    "pageTitle": "",
-   "pageDescription": "",
+   "pageDescription": "Clip Stack keeps your last 10 copied items and drops them straight into any field. Local-only, password-safe, one keyboard shortcut away.",
    "tags": [
     "extension",
     "productivity",
@@ -264,8 +264,8 @@
    "fork": false,
    "repo": "https://github.com/citoreh/clip",
    "live": "https://citoreh.github.io/clip/",
-   "thumb": null,
-   "shotAt": null
+   "thumb": "thumbs/clip.jpg",
+   "shotAt": "2026-10-15T04:14:20.870Z"
   },
   {
    "name": "cinema",
@@ -286,8 +286,8 @@
    "fork": false,
    "repo": "https://github.com/citoreh/cinema",
    "live": "https://citoreh.github.io/cinema/",
-   "thumb": null,
-   "shotAt": null
+   "thumb": "thumbs/cinema.jpg",
+   "shotAt": "2026-10-15T04:14:17.931Z"
   },
   {
    "name": "televika",
@@ -296,7 +296,7 @@
    "category": "cinema",
    "description": "A searchable local archive of 706 movie stream links with poster art.",
    "pageTitle": "",
-   "pageDescription": "",
+   "pageDescription": "A searchable local archive of 706 movie stream links.",
    "tags": [
     "web app",
     "HLS",
@@ -308,8 +308,8 @@
    "fork": false,
    "repo": "https://github.com/citoreh/televika",
    "live": "https://citoreh.github.io/televika/",
-   "thumb": null,
-   "shotAt": null
+   "thumb": "thumbs/televika.jpg",
+   "shotAt": "2026-10-15T04:15:54.864Z"
   },
   {
    "name": "m3u8",
@@ -330,8 +330,8 @@
    "fork": false,
    "repo": "https://github.com/citoreh/m3u8",
    "live": "https://citoreh.github.io/m3u8/",
-   "thumb": null,
-   "shotAt": null
+   "thumb": "thumbs/m3u8.jpg",
+   "shotAt": "2026-10-15T04:14:47.804Z"
   },
   {
    "name": "subs",
@@ -340,7 +340,7 @@
    "category": "cinema",
    "description": "Full-text search inside the Persian SRT subtitles of Iranian films, from Ejareh-neshinha to Mouse.",
    "pageTitle": "",
-   "pageDescription": "",
+   "pageDescription": "فایل‌های SRT فارسی این پوشه به‌صورت خودکار بار می‌شوند — در متن آن‌ها جست‌وجو کنید و هر نتیجه را همراه با کیو پیش و پس از آن ببینید.",
    "tags": [
     "web app",
     "SRT",
@@ -352,8 +352,8 @@
    "fork": false,
    "repo": "https://github.com/citoreh/subs",
    "live": "https://citoreh.github.io/subs/",
-   "thumb": null,
-   "shotAt": null
+   "thumb": "thumbs/subs.jpg",
+   "shotAt": "2026-10-15T04:15:26.597Z"
   },
   {
    "name": "skill",
@@ -362,7 +362,7 @@
    "category": "pub",
    "description": "A working library of skill files for Claude, including Farnevis and Seedance Director, readable in the browser and downloadable.",
    "pageTitle": "",
-   "pageDescription": "",
+   "pageDescription": "Instructions and reference material for Claude, kept as plain text and versioned like everything else. Each entry below can be read in the browser or downloaded directly.",
    "tags": [
     "library",
     "Claude",
@@ -374,8 +374,8 @@
    "fork": false,
    "repo": "https://github.com/citoreh/skill",
    "live": "https://citoreh.github.io/skill/",
-   "thumb": null,
-   "shotAt": null
+   "thumb": "thumbs/skill.jpg",
+   "shotAt": "2026-10-15T04:15:19.013Z"
   },
   {
    "name": "outfit",
@@ -384,7 +384,7 @@
    "category": "ext",
    "description": "Reads any outfit with Gemini and builds ready-to-run shopping searches for every piece: dress, jacket, shoes.",
    "pageTitle": "",
-   "pageDescription": "",
+   "pageDescription": "A Chrome extension that reads any outfit with Gemini and builds ready-to-run searches for every piece — dress, jacket, shoes, all of it.",
    "tags": [
     "extension",
     "AI",
@@ -396,8 +396,8 @@
    "fork": false,
    "repo": "https://github.com/citoreh/outfit",
    "live": "https://citoreh.github.io/outfit/",
-   "thumb": null,
-   "shotAt": null
+   "thumb": "thumbs/outfit.jpg",
+   "shotAt": "2026-10-15T04:14:56.315Z"
   },
   {
    "name": "Harvester",
@@ -418,8 +418,8 @@
    "fork": false,
    "repo": "https://github.com/citoreh/Harvester",
    "live": "https://citoreh.github.io/Harvester/",
-   "thumb": null,
-   "shotAt": null
+   "thumb": "thumbs/Harvester.jpg",
+   "shotAt": "2026-10-15T04:14:30.698Z"
   },
   {
    "name": "ketabjoo",
@@ -428,7 +428,7 @@
    "category": "ext",
    "description": "Searches Persian book archives across Telegram channels, with a direct link to each original message.",
    "pageTitle": "",
-   "pageDescription": "",
+   "pageDescription": "افزونه‌ای برای جستجوی سریع در آرشیو کانال‌های تلگرام. نتیجه هر جستجو با لینک مستقیم به پیام اصلی در تلگرام.",
    "tags": [
     "extension",
     "Persian",
@@ -440,8 +440,8 @@
    "fork": false,
    "repo": "https://github.com/citoreh/ketabjoo",
    "live": "https://citoreh.github.io/ketabjoo/",
-   "thumb": null,
-   "shotAt": null
+   "thumb": "thumbs/ketabjoo.jpg",
+   "shotAt": "2026-10-15T04:14:43.949Z"
   },
   {
    "name": "redline",
@@ -450,7 +450,7 @@
    "category": "ext",
    "description": "A bias checker for Persian news. Highlights loaded wording and swaps it for neutral phrasing, with an optional AI review pass.",
    "pageTitle": "",
-   "pageDescription": "",
+   "pageDescription": "Redline highlights loaded, sensationalized wording in Persian news articles and swaps it for neutral phrasing — instantly from a public dictionary, and deeper with an optional AI pass.",
    "tags": [
     "extension",
     "Persian",
@@ -462,8 +462,8 @@
    "fork": false,
    "repo": "https://github.com/citoreh/redline",
    "live": "https://citoreh.github.io/redline/",
-   "thumb": null,
-   "shotAt": null
+   "thumb": "thumbs/redline.jpg",
+   "shotAt": "2026-10-15T04:15:10.363Z"
   },
   {
    "name": "Doblaj-",
@@ -472,7 +472,7 @@
    "category": "ext",
    "description": "Live Persian dubbing for any video in Chrome. Listens to the tab, detects the language and speaks it back in Persian a few seconds later.",
    "pageTitle": "",
-   "pageDescription": "",
+   "pageDescription": "A Chrome extension that listens to whatever is playing in your tab, works out what language it is, and speaks it back in Persian a few seconds later. Bring your own Gemini API key.",
    "tags": [
     "extension",
     "AI",
@@ -484,8 +484,8 @@
    "fork": false,
    "repo": "https://github.com/citoreh/Doblaj-",
    "live": "https://citoreh.github.io/Doblaj-/",
-   "thumb": null,
-   "shotAt": null
+   "thumb": "thumbs/Doblaj-.jpg",
+   "shotAt": "2026-10-15T04:14:23.950Z"
   },
   {
    "name": "navayab",
@@ -494,7 +494,7 @@
    "category": "ext",
    "description": "Name the tune before the clock drains. A listening game with three levels, a live shared leaderboard and a full Persian interface.",
    "pageTitle": "",
-   "pageDescription": "",
+   "pageDescription": "A listening game for Chrome. Hear a track, name it before the clock drains. Three levels, a shared live leaderboard, and a full Persian interface.",
    "tags": [
     "extension",
     "game",
@@ -506,8 +506,8 @@
    "fork": false,
    "repo": "https://github.com/citoreh/navayab",
    "live": "https://citoreh.github.io/navayab/",
-   "thumb": null,
-   "shotAt": null
+   "thumb": "thumbs/navayab.jpg",
+   "shotAt": "2026-10-15T04:14:53.515Z"
   },
   {
    "name": "boresh",
@@ -528,8 +528,8 @@
    "fork": false,
    "repo": "https://github.com/citoreh/boresh",
    "live": "https://citoreh.github.io/boresh/",
-   "thumb": null,
-   "shotAt": null
+   "thumb": "thumbs/boresh.jpg",
+   "shotAt": "2026-10-15T04:14:14.865Z"
   },
   {
    "name": "pinpoint-iran",
@@ -538,7 +538,7 @@
    "category": "ext",
    "description": "The Iran edition: twelve Iranian cities from Tehran to Bijar, no labels. The target radius shrinks as your streak grows.",
    "pageTitle": "",
-   "pageDescription": "",
+   "pageDescription": "A Chrome extension geography duel. Twelve Iranian cities, no labels, fifteen seconds each. Pin them on the map, build streaks, climb the global leaderboard.",
    "tags": [
     "extension",
     "game",
@@ -550,8 +550,8 @@
    "fork": false,
    "repo": "https://github.com/citoreh/pinpoint-iran",
    "live": "https://citoreh.github.io/pinpoint-iran/",
-   "thumb": null,
-   "shotAt": null
+   "thumb": "thumbs/pinpoint-iran.jpg",
+   "shotAt": "2026-10-15T04:15:01.949Z"
   },
   {
    "name": "Pinpoint",
@@ -560,20 +560,20 @@
    "category": "ext",
    "description": "Twelve cities, one unlabeled world map, fifteen seconds each. Precision scores, hesitation costs, one miss resets your streak.",
    "pageTitle": "",
-   "pageDescription": "",
+   "pageDescription": "Twelve cities. One map. No labels. A fast world-map geography game for Chrome: locate capitals against the clock, build streaks, climb the leaderboard.",
    "tags": [
     "extension",
     "game",
     "geography"
    ],
-   "language": "HTML",
+   "language": "JavaScript",
    "pushed": "2026-07-17",
    "pushedAt": "2026-07-17T11:34:47Z",
    "fork": false,
    "repo": "https://github.com/citoreh/Pinpoint",
    "live": "https://citoreh.github.io/Pinpoint/",
-   "thumb": null,
-   "shotAt": null
+   "thumb": "thumbs/Pinpoint.jpg",
+   "shotAt": "2026-10-15T04:14:59.213Z"
   },
   {
    "name": "Mowj",
@@ -582,7 +582,7 @@
    "category": "ext",
    "description": "Listen to YouTube Music in sync with friends. No audio streaming: each browser plays, Mowj keeps everyone on the same beat.",
    "pageTitle": "",
-   "pageDescription": "",
+   "pageDescription": "A Chrome extension for listening to YouTube Music in sync with friends. No audio streaming — each browser plays, Mowj keeps everyone on the same beat.",
    "tags": [
     "extension",
     "music",
@@ -594,8 +594,8 @@
    "fork": false,
    "repo": "https://github.com/citoreh/Mowj",
    "live": "https://citoreh.github.io/Mowj/",
-   "thumb": null,
-   "shotAt": null
+   "thumb": "thumbs/Mowj.jpg",
+   "shotAt": "2026-10-15T04:14:50.799Z"
   },
   {
    "name": "sieve-of-fortune",
@@ -604,7 +604,7 @@
    "category": "ext",
    "description": "A daily lucky number drawn from Ulam's 1956 sieve, shaped by date, season, time and place, with the full reasoning shown.",
    "pageTitle": "",
-   "pageDescription": "",
+   "pageDescription": "A Chrome extension that gives you a real lucky number every day, drawn from Ulam's 1956 lucky-number sieve — computed from today's date, season, time and your place on Earth, with the full reasoning shown.",
    "tags": [
     "extension",
     "math",
@@ -616,8 +616,8 @@
    "fork": false,
    "repo": "https://github.com/citoreh/sieve-of-fortune",
    "live": "https://citoreh.github.io/sieve-of-fortune/",
-   "thumb": null,
-   "shotAt": null
+   "thumb": "thumbs/sieve-of-fortune.jpg",
+   "shotAt": "2026-10-15T04:15:15.934Z"
   },
   {
    "name": "Iching-extension",
@@ -626,20 +626,20 @@
    "category": "ext",
    "description": "An animated three-coin casting ritual, all 64 hexagrams in King Wen order, changing lines and a private casting record. Fully offline.",
    "pageTitle": "",
-   "pageDescription": "",
+   "pageDescription": "Cast the coins and read the Book of Changes in your browser. All 64 hexagrams, changing lines, coin & yarrow odds, and a private casting record. A Chrome extension.",
    "tags": [
     "extension",
     "divination",
     "offline"
    ],
-   "language": "HTML",
+   "language": "JavaScript",
    "pushed": "2026-07-13",
    "pushedAt": "2026-07-13T14:16:45Z",
    "fork": false,
    "repo": "https://github.com/citoreh/Iching-extension",
    "live": "https://citoreh.github.io/Iching-extension/",
-   "thumb": null,
-   "shotAt": null
+   "thumb": "thumbs/Iching-extension.jpg",
+   "shotAt": "2026-10-15T04:14:33.832Z"
   },
   {
    "name": "qali-clock",
@@ -660,8 +660,8 @@
    "fork": false,
    "repo": "https://github.com/citoreh/qali-clock",
    "live": "https://citoreh.github.io/qali-clock/",
-   "thumb": null,
-   "shotAt": null
+   "thumb": "thumbs/qali-clock.jpg",
+   "shotAt": "2026-10-15T04:15:07.513Z"
   },
   {
    "name": "prompt-lens",
@@ -670,7 +670,7 @@
    "category": "ext",
    "description": "Right-click any image to reverse-engineer a generation prompt in the grammar of Midjourney, Seedance, Kling, Flux or SDXL. Bring your own key.",
    "pageTitle": "",
-   "pageDescription": "",
+   "pageDescription": "Right-click any image to reverse-engineer a generation prompt for Midjourney, Seedance, Kling, Flux, SDXL and more. Bring your own API key — nothing leaves your browser.",
    "tags": [
     "extension",
     "AI",
@@ -682,8 +682,8 @@
    "fork": false,
    "repo": "https://github.com/citoreh/prompt-lens",
    "live": "https://citoreh.github.io/prompt-lens/",
-   "thumb": null,
-   "shotAt": null
+   "thumb": "thumbs/prompt-lens.jpg",
+   "shotAt": "2026-10-15T04:15:04.732Z"
   },
   {
    "name": "tab-activity",
@@ -692,7 +692,7 @@
    "category": "ext",
    "description": "A private time dial for your browsing: tracks the time you actively spend on each site, entirely on your device.",
    "pageTitle": "",
-   "pageDescription": "",
+   "pageDescription": "A beautiful, private time dial for your browsing. Tab Activity tracks the time you actively spend on websites — entirely on your device. Nothing leaves your machine.",
    "tags": [
     "extension",
     "productivity",
@@ -704,8 +704,8 @@
    "fork": false,
    "repo": "https://github.com/citoreh/tab-activity",
    "live": "https://citoreh.github.io/tab-activity/",
-   "thumb": null,
-   "shotAt": null
+   "thumb": "thumbs/tab-activity.jpg",
+   "shotAt": "2026-10-15T04:15:32.430Z"
   },
   {
    "name": "world-ambient",
@@ -714,7 +714,7 @@
    "category": "ext",
    "description": "Curated ambient playlists while you browse. Pick a mood, press play, drift.",
    "pageTitle": "",
-   "pageDescription": "",
+   "pageDescription": "World Ambient is a Chrome extension that plays curated ambient playlists while you browse. Pick a mood, press play, drift.",
    "tags": [
     "extension",
     "music",
@@ -726,8 +726,8 @@
    "fork": false,
    "repo": "https://github.com/citoreh/world-ambient",
    "live": "https://citoreh.github.io/world-ambient/",
-   "thumb": null,
-   "shotAt": null
+   "thumb": "thumbs/world-ambient.jpg",
+   "shotAt": "2026-10-15T04:15:57.646Z"
   },
   {
    "name": "remains-of-today",
@@ -736,7 +736,7 @@
    "category": "ext",
    "description": "A calm countdown ring in the toolbar showing how much of today, the week, month, quarter and year is left.",
    "pageTitle": "",
-   "pageDescription": "",
+   "pageDescription": "A Chrome extension that shows how much of today, this week, month, quarter, and year is left — as a live ring in your toolbar. No data collected, ever.",
    "tags": [
     "extension",
     "time",
@@ -748,8 +748,8 @@
    "fork": false,
    "repo": "https://github.com/citoreh/remains-of-today",
    "live": "https://citoreh.github.io/remains-of-today/",
-   "thumb": null,
-   "shotAt": null
+   "thumb": "thumbs/remains-of-today.jpg",
+   "shotAt": "2026-10-15T04:15:13.209Z"
   },
   {
    "name": "Ambient-Cue",
