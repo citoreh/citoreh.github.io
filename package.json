@@ -1,0 +1,11 @@
+{
+  "name": "citoreh-showreel",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs"
+  },
+  "devDependencies": {
+    "playwright": "1.55.0"
+  }
+}

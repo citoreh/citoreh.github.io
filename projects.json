@@ -1,0 +1,370 @@
+{
+ "_readme": "Optional per-repo overrides. Any field set here wins over what the build finds on GitHub. Fields: title, fa (Persian title), category (studio|ext|cinema|pub|fork|other), description, tags, live (a URL, or false to show no live link), hide (true to leave the repo out).",
+ "projects": {
+  "angle": {
+   "title": "Contact Angle",
+   "category": "studio",
+   "description": "Grows Islamic star patterns from a plain tiling. Two rays leave each edge midpoint and meet as stars; tune the contact angle, offset and rotation, then animate the construction.",
+   "tags": [
+    "web app",
+    "canvas",
+    "geometry"
+   ]
+  },
+  "Iqa": {
+   "title": "Iqa Rhythm Studio",
+   "category": "studio",
+   "description": "Build rhythmic cycles from Arab, Turkish and Persian traditions on four drum lanes, write A, B and fill variations, and export audio or MIDI.",
+   "tags": [
+    "web app",
+    "audio",
+    "MIDI"
+   ]
+  },
+  "Specimen": {
+   "title": "Specimen Loop",
+   "category": "studio",
+   "description": "Turns one photo into a seamless liquid-warp loop with tracker labels and glitch bursts. Every term in the motion formula is a slider; exports MP4 or GIF.",
+   "tags": [
+    "web app",
+    "video",
+    "generative"
+   ]
+  },
+  "synth": {
+   "title": "Equation Synth",
+   "category": "studio",
+   "description": "Write y = f(x) and a dot sweeps along x, playing the curve's height as pitch. Layer equations like instruments and save MP4 or WAV.",
+   "tags": [
+    "web app",
+    "audio",
+    "math"
+   ]
+  },
+  "boresh": {
+   "title": "Boresh",
+   "category": "studio",
+   "description": "A sliced portrait studio. Cut, mirror, weave or mosaic a portrait into strips that breathe on a sine loop. Everything runs locally.",
+   "tags": [
+    "web app",
+    "image",
+    "motion"
+   ],
+   "fa": "برش"
+  },
+  "qali-clock": {
+   "title": "Qāli-ye Emruz",
+   "category": "studio",
+   "description": "The rug of today: a clock drawn as a carpet on a loom, weaving itself through the hours. A new rug begins at midnight.",
+   "tags": [
+    "web app",
+    "clock",
+    "textile"
+   ],
+   "fa": "قالی امروز"
+  },
+  "prompt-lens": {
+   "title": "PromptLens",
+   "category": "ext",
+   "description": "Right-click any image to reverse-engineer a generation prompt in the grammar of Midjourney, Seedance, Kling, Flux or SDXL. Bring your own key.",
+   "tags": [
+    "extension",
+    "AI",
+    "image"
+   ]
+  },
+  "outfit": {
+   "title": "Outfit Lens",
+   "category": "ext",
+   "description": "Reads any outfit with Gemini and builds ready-to-run shopping searches for every piece: dress, jacket, shoes.",
+   "tags": [
+    "extension",
+    "AI",
+    "fashion"
+   ]
+  },
+  "Doblaj-": {
+   "title": "Doblaj",
+   "category": "ext",
+   "description": "Live Persian dubbing for any video in Chrome. Listens to the tab, detects the language and speaks it back in Persian a few seconds later.",
+   "tags": [
+    "extension",
+    "AI",
+    "voice"
+   ],
+   "fa": "دوبله"
+  },
+  "redline": {
+   "title": "Redline",
+   "category": "ext",
+   "description": "A bias checker for Persian news. Highlights loaded wording and swaps it for neutral phrasing, with an optional AI review pass.",
+   "tags": [
+    "extension",
+    "Persian",
+    "news"
+   ]
+  },
+  "ketabjoo": {
+   "title": "Ketabjoo",
+   "category": "ext",
+   "description": "Searches Persian book archives across Telegram channels, with a direct link to each original message.",
+   "tags": [
+    "extension",
+    "Persian",
+    "books"
+   ],
+   "fa": "کتابجو"
+  },
+  "Mowj": {
+   "title": "Mowj Rooms",
+   "category": "ext",
+   "description": "Listen to YouTube Music in sync with friends. No audio streaming: each browser plays, Mowj keeps everyone on the same beat.",
+   "tags": [
+    "extension",
+    "music",
+    "realtime"
+   ],
+   "fa": "موج"
+  },
+  "navayab": {
+   "title": "Navāyab",
+   "category": "ext",
+   "description": "Name the tune before the clock drains. A listening game with three levels, a live shared leaderboard and a full Persian interface.",
+   "tags": [
+    "extension",
+    "game",
+    "music"
+   ],
+   "fa": "نوایاب"
+  },
+  "Pinpoint": {
+   "title": "Pinpoint: Capital Hunt",
+   "category": "ext",
+   "description": "Twelve cities, one unlabeled world map, fifteen seconds each. Precision scores, hesitation costs, one miss resets your streak.",
+   "tags": [
+    "extension",
+    "game",
+    "geography"
+   ]
+  },
+  "pinpoint-iran": {
+   "title": "Pinpoint Iran",
+   "category": "ext",
+   "description": "The Iran edition: twelve Iranian cities from Tehran to Bijar, no labels. The target radius shrinks as your streak grows.",
+   "tags": [
+    "extension",
+    "game",
+    "Iran"
+   ],
+   "fa": "شکار شهر"
+  },
+  "Iching-extension": {
+   "title": "I Ching",
+   "category": "ext",
+   "description": "An animated three-coin casting ritual, all 64 hexagrams in King Wen order, changing lines and a private casting record. Fully offline.",
+   "tags": [
+    "extension",
+    "divination",
+    "offline"
+   ],
+   "fa": "易"
+  },
+  "sieve-of-fortune": {
+   "title": "Sieve of Fortune",
+   "category": "ext",
+   "description": "A daily lucky number drawn from Ulam's 1956 sieve, shaped by date, season, time and place, with the full reasoning shown.",
+   "tags": [
+    "extension",
+    "math",
+    "daily"
+   ]
+  },
+  "tab-activity": {
+   "title": "Tab Activity",
+   "category": "ext",
+   "description": "A private time dial for your browsing: tracks the time you actively spend on each site, entirely on your device.",
+   "tags": [
+    "extension",
+    "productivity",
+    "private"
+   ]
+  },
+  "remains-of-today": {
+   "title": "What Remains of Today",
+   "category": "ext",
+   "description": "A calm countdown ring in the toolbar showing how much of today, the week, month, quarter and year is left.",
+   "tags": [
+    "extension",
+    "time",
+    "calm"
+   ]
+  },
+  "world-ambient": {
+   "title": "World Ambient",
+   "category": "ext",
+   "description": "Curated ambient playlists while you browse. Pick a mood, press play, drift.",
+   "tags": [
+    "extension",
+    "music",
+    "ambient"
+   ]
+  },
+  "clip": {
+   "title": "Clip Stack",
+   "category": "ext",
+   "description": "Keeps your last ten copied items and drops them into any field with one shortcut. Local-only and password-safe.",
+   "tags": [
+    "extension",
+    "productivity",
+    "clipboard"
+   ]
+  },
+  "Ambient-Cue": {
+   "title": "Ambient Cue",
+   "category": "ext",
+   "description": "Background music that shifts with the time of day, your activity and your job, pulled from a track catalog you host and update.",
+   "tags": [
+    "extension",
+    "music",
+    "MV3"
+   ],
+   "live": false
+  },
+  "film": {
+   "title": "Film Credits Search",
+   "category": "cinema",
+   "description": "Searches Iranian film credits kept as one CSV per film. A GitHub Action rebuilds the index on every push, so new films appear automatically.",
+   "tags": [
+    "web app",
+    "Persian",
+    "GitHub Actions"
+   ],
+   "fa": "جستجو در تیتراژ فیلم‌ها"
+  },
+  "subs": {
+   "title": "Subtitle Search",
+   "category": "cinema",
+   "description": "Full-text search inside the Persian SRT subtitles of Iranian films, from Ejareh-neshinha to Mouse.",
+   "tags": [
+    "web app",
+    "SRT",
+    "Persian"
+   ],
+   "fa": "جست‌وجوگر زیرنویس"
+  },
+  "itube": {
+   "title": "Reel Archive",
+   "category": "cinema",
+   "description": "Searches film lists harvested from 25 Persian YouTube channels and plays matches inline. One static page, no build step.",
+   "tags": [
+    "web app",
+    "YouTube",
+    "archive"
+   ],
+   "fa": "آرشیو فیلم"
+  },
+  "cinema": {
+   "title": "Poster Index",
+   "category": "cinema",
+   "description": "Poster index with per-film search pages built from frames and text, starting with Marjan and Tehran 57.",
+   "tags": [
+    "web app",
+    "posters",
+    "search"
+   ]
+  },
+  "televika": {
+   "title": "Movie Archive",
+   "category": "cinema",
+   "description": "A searchable local archive of 706 movie stream links with poster art.",
+   "tags": [
+    "web app",
+    "HLS",
+    "archive"
+   ]
+  },
+  "m3u8": {
+   "title": "M3U8 Player",
+   "category": "cinema",
+   "description": "An HLS player with a built-in list of streams for classic Iranian films.",
+   "tags": [
+    "web app",
+    "HLS",
+    "player"
+   ]
+  },
+  "Harvester": {
+   "title": "Video Harvester",
+   "category": "cinema",
+   "description": "Point it at a YouTube channel and get every title and video URL back as a clean list. Your API key stays in the page.",
+   "tags": [
+    "web app",
+    "YouTube API",
+    "tool"
+   ]
+  },
+  "films": {
+   "title": "CSV Search Template",
+   "category": "cinema",
+   "description": "The reusable template behind the credits search: drop CSVs into data/, push, and GitHub Pages rebuilds the index.",
+   "tags": [
+    "template",
+    "CSV",
+    "GitHub Pages"
+   ]
+  },
+  "eproof": {
+   "title": "persian_proof",
+   "category": "pub",
+   "description": "Proofreads large collections of Persian ePubs for spelling, grammar and typography, producing a browsable report and safely corrected copies.",
+   "tags": [
+    "Python",
+    "ePub",
+    "Persian"
+   ],
+   "live": false
+  },
+  "skill": {
+   "title": "Skill Archive",
+   "category": "pub",
+   "description": "A working library of skill files for Claude, including Farnevis and Seedance Director, readable in the browser and downloadable.",
+   "tags": [
+    "library",
+    "Claude",
+    "skills"
+   ]
+  },
+  "afarahani-com": {
+   "title": "afarahani.com mirror",
+   "category": "pub",
+   "description": "A static mirror of Ali Farahani's Wix site, captured with wget and hosted on GitHub Pages.",
+   "tags": [
+    "static site",
+    "mirror",
+    "Wix"
+   ]
+  },
+  "MoneyPrinterTurbo": {
+   "title": "MoneyPrinterTurbo",
+   "category": "fork",
+   "description": "Fork of harry0703/MoneyPrinterTurbo: give it a topic and it writes the script, matches footage and adds subtitles and music for a short video.",
+   "tags": [
+    "fork",
+    "Python",
+    "video"
+   ],
+   "live": false
+  },
+  "hermes-literary-translation-mastery": {
+   "title": "Hermes Book Translator",
+   "category": "fork",
+   "description": "Fork of a desktop suite for translating books, novels and articles into literary Persian.",
+   "tags": [
+    "fork",
+    "Python",
+    "translation"
+   ],
+   "live": false
+  }
+ }
+}

@@ -1,0 +1,58 @@
+name: Update showreel
+
+on:
+  schedule:
+    - cron: "17 5 * * *"   # daily, 05:17 UTC
+  workflow_dispatch:
+    inputs:
+      force_shots:
+        description: "Retake every screenshot"
+        type: boolean
+        default: false
+  push:
+    branches: [main]
+    paths:
+      - projects.json
+      - scripts/**
+      - .github/workflows/showreel.yml
+
+permissions:
+  contents: write
+
+concurrency:
+  group: showreel
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install Playwright
+        run: |
+          npm install --no-audit --no-fund
+          npx playwright install --with-deps chromium
+
+      - name: Build repos.json and screenshots
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          FORCE_SHOTS: ${{ inputs.force_shots && '1' || '0' }}
+        run: npm run build
+
+      - name: Commit changes
+        run: |
+          git config user.name "showreel-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add repos.json thumbs
+          if git diff --cached --quiet; then
+            echo "No changes"
+          else
+            git commit -m "Update showreel data"
+            git push
+          fi

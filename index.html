@@ -52,7 +52,9 @@ h2{font-family:var(--display);font-weight:600;font-size:26px;margin:0;letter-spa
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:18px}
 .card{background:var(--surface);border:1px solid var(--line);border-radius:6px;overflow:hidden;display:flex;flex-direction:column;min-width:0;transition:transform .2s ease,border-color .2s ease}
 .card:hover{transform:translateY(-2px);border-color:var(--lapis)}
-.card canvas{display:block;width:100%;aspect-ratio:16/7;max-width:100%;border-bottom:1px solid var(--line)}
+.card canvas,.card .shot{display:block;width:100%;aspect-ratio:1200/630;max-width:100%;border-bottom:1px solid var(--line);background:var(--chip);overflow:hidden}
+.card .shot img{display:block;width:100%;height:100%;object-fit:cover;object-position:top center;transition:transform .4s ease}
+.card:hover .shot img{transform:scale(1.03)}
 .body{padding:14px 16px 16px;display:flex;flex-direction:column;gap:8px;flex:1;min-width:0}
 .top{display:flex;justify-content:space-between;gap:10px;align-items:baseline}
 h3{font-family:var(--display);font-weight:600;font-size:19px;margin:0;line-height:1.2;text-wrap:balance}
@@ -68,8 +70,8 @@ h3{font-family:var(--display);font-weight:600;font-size:19px;margin:0;line-heigh
 .empty{color:var(--muted);padding:30px 0}
 footer{margin-top:56px;padding-top:20px;border-top:1px solid var(--line);font-family:var(--mono);font-size:12px;color:var(--muted);display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
 footer a{color:var(--fg)}
-@media (max-width:640px){header{grid-template-columns:1fr}#q{margin-left:0;width:100%}.stats{gap:20px}}
-@media (prefers-reduced-motion:reduce){.card{transition:none}.card:hover{transform:none}}
+@media (max-width:640px){header{grid-template-columns:1fr}.controls{position:static}#q{margin-left:0;width:100%}.stats{gap:20px}}
+@media (prefers-reduced-motion:reduce){.card,.card .shot img{transition:none}.card:hover,.card:hover .shot img{transform:none}}
 </style>
 </head>
 <body>
@@ -77,7 +79,7 @@ footer a{color:var(--fg)}
 <div class="wrap">
   <header>
     <div>
-      <div class="eyebrow">github.com/citoreh · public work · Oct 2026</div>
+      <div class="eyebrow">github.com/citoreh · public work</div>
       <h1>Things I made <em>in the open</em></h1>
       <p class="lede">Every public repository on my GitHub: generative studios, Chrome extensions, Persian cinema archives and publishing tools. Each tile links to the live page and the source.</p>
     </div>
@@ -92,13 +94,12 @@ footer a{color:var(--fg)}
   <main id="list"></main>
 
   <footer>
-    <span>Pattern tiles are generated from each repo's name.</span>
+    <span><span id="updated">Screenshots of each live page; a generated pattern where there is none.</span></span>
     <span>Setareh · <a href="https://github.com/citoreh">github.com/citoreh</a></span>
   </footer>
 </div>
 
 <script>
-const GH="https://github.com/citoreh/", PAGES="https://citoreh.github.io/";
 const CATS=[
  {id:"studio",name:"Generative studios",note:"Browser instruments for pattern, sound, rhythm and image."},
  {id:"ext",name:"Chrome extensions",note:"Landing pages and source for published and upcoming extensions."},
@@ -106,84 +107,48 @@ const CATS=[
  {id:"pub",name:"Publishing & sites",note:"Proofreading, skill files and site mirrors."},
  {id:"fork",name:"Forks",note:"Upstream projects I've forked and adapted."}
 ];
-const P=[
- // studio
- ["angle","Contact Angle","","studio","2026-10-15","Grows Islamic star patterns from a plain tiling. Two rays leave each edge midpoint and meet as stars; tune the contact angle, offset and rotation, then animate the construction.",["web app","canvas","geometry"],1],
- ["Iqa","Iqa Rhythm Studio","","studio","2026-10-14","Build rhythmic cycles from Arab, Turkish and Persian traditions on four drum lanes, write A, B and fill variations, and export audio or MIDI.",["web app","audio","MIDI"],1],
- ["Specimen","Specimen Loop","","studio","2026-10-10","Turns one photo into a seamless liquid-warp loop with tracker labels and glitch bursts. Every term in the motion formula is a slider; exports MP4 or GIF.",["web app","video","generative"],1],
- ["synth","Equation Synth","","studio","2026-10-09","Write y = f(x) and a dot sweeps along x, playing the curve's height as pitch. Layer equations like instruments and save MP4 or WAV.",["web app","audio","math"],1],
- ["boresh","Boresh","برش","studio","2026-07-21","A sliced portrait studio. Cut, mirror, weave or mosaic a portrait into strips that breathe on a sine loop. Everything runs locally.",["web app","image","motion"],1],
- ["qali-clock","Qāli-ye Emruz","قالی امروز","studio","2026-07-09","The rug of today: a clock drawn as a carpet on a loom, weaving itself through the hours. A new rug begins at midnight.",["web app","clock","textile"],1],
- // extensions
- ["prompt-lens","PromptLens","","ext","2026-07-04","Right-click any image to reverse-engineer a generation prompt in the grammar of Midjourney, Seedance, Kling, Flux or SDXL. Bring your own key.",["extension","AI","image"],1],
- ["outfit","Outfit Lens","","ext","2026-08-13","Reads any outfit with Gemini and builds ready-to-run shopping searches for every piece: dress, jacket, shoes.",["extension","AI","fashion"],1],
- ["Doblaj-","Doblaj","دوبله","ext","2026-07-27","Live Persian dubbing for any video in Chrome. Listens to the tab, detects the language and speaks it back in Persian a few seconds later.",["extension","AI","voice"],1],
- ["redline","Redline","","ext","2026-07-28","A bias checker for Persian news. Highlights loaded wording and swaps it for neutral phrasing, with an optional AI review pass.",["extension","Persian","news"],1],
- ["ketabjoo","Ketabjoo","کتابجو","ext","2026-08-09","Searches Persian book archives across Telegram channels, with a direct link to each original message.",["extension","Persian","books"],1],
- ["Mowj","Mowj Rooms","موج","ext","2026-07-15","Listen to YouTube Music in sync with friends. No audio streaming: each browser plays, Mowj keeps everyone on the same beat.",["extension","music","realtime"],1],
- ["navayab","Navāyab","نوایاب","ext","2026-07-26","Name the tune before the clock drains. A listening game with three levels, a live shared leaderboard and a full Persian interface.",["extension","game","music"],1],
- ["Pinpoint","Pinpoint: Capital Hunt","","ext","2026-07-17","Twelve cities, one unlabeled world map, fifteen seconds each. Precision scores, hesitation costs, one miss resets your streak.",["extension","game","geography"],1],
- ["pinpoint-iran","Pinpoint Iran","شکار شهر","ext","2026-07-17","The Iran edition: twelve Iranian cities from Tehran to Bijar, no labels. The target radius shrinks as your streak grows.",["extension","game","Iran"],1],
- ["Iching-extension","I Ching","易","ext","2026-07-13","An animated three-coin casting ritual, all 64 hexagrams in King Wen order, changing lines and a private casting record. Fully offline.",["extension","divination","offline"],1],
- ["sieve-of-fortune","Sieve of Fortune","","ext","2026-07-14","A daily lucky number drawn from Ulam's 1956 sieve, shaped by date, season, time and place, with the full reasoning shown.",["extension","math","daily"],1],
- ["tab-activity","Tab Activity","","ext","2026-07-04","A private time dial for your browsing: tracks the time you actively spend on each site, entirely on your device.",["extension","productivity","private"],1],
- ["remains-of-today","What Remains of Today","","ext","2026-07-02","A calm countdown ring in the toolbar showing how much of today, the week, month, quarter and year is left.",["extension","time","calm"],1],
- ["world-ambient","World Ambient","","ext","2026-07-02","Curated ambient playlists while you browse. Pick a mood, press play, drift.",["extension","music","ambient"],1],
- ["clip","Clip Stack","","ext","2026-08-24","Keeps your last ten copied items and drops them into any field with one shortcut. Local-only and password-safe.",["extension","productivity","clipboard"],1],
- ["Ambient-Cue","Ambient Cue","","ext","2026-07-01","Background music that shifts with the time of day, your activity and your job, pulled from a track catalog you host and update.",["extension","music","MV3"],0],
- // cinema
- ["film","Film Credits Search","جستجو در تیتراژ فیلم‌ها","cinema","2026-09-13","Searches Iranian film credits kept as one CSV per film. A GitHub Action rebuilds the index on every push, so new films appear automatically.",["web app","Persian","GitHub Actions"],1],
- ["subs","Subtitle Search","جست‌وجوگر زیرنویس","cinema","2026-08-15","Full-text search inside the Persian SRT subtitles of Iranian films, from Ejareh-neshinha to Mouse.",["web app","SRT","Persian"],1],
- ["itube","Reel Archive","آرشیو فیلم","cinema","2026-08-29","Searches film lists harvested from 25 Persian YouTube channels and plays matches inline. One static page, no build step.",["web app","YouTube","archive"],1],
- ["cinema","Poster Index","","cinema","2026-08-22","Poster index with per-film search pages built from frames and text, starting with Marjan and Tehran 57.",["web app","posters","search"],1],
- ["televika","Movie Archive","","cinema","2026-08-17","A searchable local archive of 706 movie stream links with poster art.",["web app","HLS","archive"],1],
- ["m3u8","M3U8 Player","","cinema","2026-08-16","An HLS player with a built-in list of streams for classic Iranian films.",["web app","HLS","player"],1],
- ["Harvester","Video Harvester","","cinema","2026-08-13","Point it at a YouTube channel and get every title and video URL back as a clean list. Your API key stays in the page.",["web app","YouTube API","tool"],1],
- ["films","CSV Search Template","","cinema","2026-09-09","The reusable template behind the credits search: drop CSVs into data/, push, and GitHub Pages rebuilds the index.",["template","CSV","GitHub Pages"],1],
- // publishing
- ["eproof","persian_proof","","pub","2026-09-29","Proofreads large collections of Persian ePubs for spelling, grammar and typography, producing a browsable report and safely corrected copies.",["Python","ePub","Persian"],0],
- ["skill","Skill Archive","","pub","2026-08-14","A working library of skill files for Claude, including Farnevis and Seedance Director, readable in the browser and downloadable.",["library","Claude","skills"],1],
- ["afarahani-com","afarahani.com mirror","","pub","2026-09-11","A static mirror of Ali Farahani's Wix site, captured with wget and hosted on GitHub Pages.",["static site","mirror","Wix"],1],
- // forks
- ["MoneyPrinterTurbo","MoneyPrinterTurbo","","fork","2026-09-25","Fork of harry0703/MoneyPrinterTurbo: give it a topic and it writes the script, matches footage and adds subtitles and music for a short video.",["fork","Python","video"],0],
- ["hermes-literary-translation-mastery","Hermes Book Translator","","fork","2026-09-06","Fork of a desktop suite for translating books, novels and articles into literary Persian.",["fork","Python","translation"],0]
-];
+CATS.push({id:"other",name:"Other",note:"New repos land here until they get a topic or an entry in projects.json."});
+let P=[];
 
 const fmt=d=>new Date(d+"T00:00:00Z").toLocaleDateString("en-GB",{day:"numeric",month:"short",year:"numeric",timeZone:"UTC"});
-const own=P.filter(p=>p[3]!=="fork").length;
-document.getElementById("stats").innerHTML=
- `<div><b>${P.length}</b><span>public repos</span></div><div><b>${P.filter(p=>p[3]==="ext").length}</b><span>extensions</span></div><div><b>${P.filter(p=>p[7]).length}</b><span>live pages</span></div>`;
+function renderStats(){
+  document.getElementById("stats").innerHTML=
+   `<div><b>${P.length}</b><span>public repos</span></div><div><b>${P.filter(p=>p.category==="ext").length}</b><span>extensions</span></div><div><b>${P.filter(p=>p.live).length}</b><span>live pages</span></div>`;
+}
 
 let cat="all",query="";
 try{cat=localStorage.getItem("reel-cat")||"all"}catch(e){}
 const chips=document.getElementById("chips");
 function renderChips(){
-  chips.innerHTML=[{id:"all",name:"All"},...CATS].map(c=>{
-    const n=c.id==="all"?P.length:P.filter(p=>p[3]===c.id).length;
+  const used=CATS.filter(c=>P.some(p=>p.category===c.id));
+  if(cat!=="all"&&!used.some(c=>c.id===cat))cat="all";
+  chips.innerHTML=[{id:"all",name:"All"},...used].map(c=>{
+    const n=c.id==="all"?P.length:P.filter(p=>p.category===c.id).length;
     return `<button class="chip" data-c="${c.id}" aria-pressed="${cat===c.id}">${c.name}<span class="n">${n}</span></button>`}).join("");
 }
 chips.addEventListener("click",e=>{const b=e.target.closest(".chip");if(!b)return;cat=b.dataset.c;try{localStorage.setItem("reel-cat",cat)}catch(e){}renderChips();render()});
 document.getElementById("q").addEventListener("input",e=>{query=e.target.value.trim().toLowerCase();render()});
 
-const esc=s=>s.replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const esc=s=>String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const hay=p=>[p.name,p.title,p.fa,p.description,p.language,...(p.tags||[])].join(" ").toLowerCase();
 function render(){
-  const list=document.getElementById("list");let html="",total=0;
+  const list=document.getElementById("list");let html="";
   for(const c of CATS){
     if(cat!=="all"&&cat!==c.id)continue;
-    const items=P.filter(p=>p[3]===c.id&&(!query||(p.join(" ")).toLowerCase().includes(query))).sort((a,b)=>b[4].localeCompare(a[4]));
-    if(!items.length)continue;total+=items.length;
+    const items=P.filter(p=>p.category===c.id&&(!query||hay(p).includes(query)));
+    if(!items.length)continue;
     html+=`<section><div class="sec-head"><h2>${c.name}</h2><p>${c.note}</p></div><div class="grid">`+items.map(p=>`
       <article class="card">
-        <canvas data-seed="${esc(p[0])}" aria-hidden="true"></canvas>
+        ${p.thumb?`<a class="shot" href="${esc(p.live||p.repo)}" target="_blank" rel="noopener" tabindex="-1"><img src="${esc(p.thumb)}?v=${esc((p.shotAt||"").slice(0,10))}" alt="Screenshot of ${esc(p.title)}" loading="lazy" width="1200" height="630"></a>`:`<canvas data-seed="${esc(p.name)}" aria-hidden="true"></canvas>`}
         <div class="body">
-          <div class="top"><h3>${esc(p[1])}${p[2]?`<span class="fa" lang="fa" dir="rtl">${p[2]}</span>`:""}</h3><span class="date">${fmt(p[4])}</span></div>
-          <p class="desc">${esc(p[5])}</p>
-          <div class="tags">${p[6].map(t=>`<span class="tag">${esc(t)}</span>`).join("")}</div>
-          <div class="links">${p[7]?`<a href="${PAGES}${p[0]}/" target="_blank" rel="noopener">Open live ↗</a>`:""}<a class="repo" href="${GH}${p[0]}" target="_blank" rel="noopener">${esc(p[0])}</a></div>
+          <div class="top"><h3>${esc(p.title)}${p.fa?`<span class="fa" lang="fa" dir="rtl">${esc(p.fa)}</span>`:""}</h3><span class="date">${fmt(p.pushed)}</span></div>
+          <p class="desc">${esc(p.description)}</p>
+          <div class="tags">${(p.tags||[]).map(t=>`<span class="tag">${esc(t)}</span>`).join("")}</div>
+          <div class="links">${p.live?`<a href="${esc(p.live)}" target="_blank" rel="noopener">Open live ↗</a>`:""}<a class="repo" href="${esc(p.repo)}" target="_blank" rel="noopener">${esc(p.name)}</a></div>
         </div>
       </article>`).join("")+`</div></section>`;
   }
-  list.innerHTML=html||`<p class="empty">No projects match “${esc(query)}”. Try a name, a tag like “audio”, or a Persian title.</p>`;
+  list.innerHTML=html||(P.length?`<p class="empty">No projects match “${esc(query)}”. Try a name, a tag like “audio”, or a Persian title.</p>`:`<p class="empty">Loading projects…</p>`);
   drawAll();
 }
 
@@ -226,6 +191,9 @@ let t;window.addEventListener("resize",()=>{clearTimeout(t);t=setTimeout(drawAll
 try{matchMedia("(prefers-color-scheme: dark)").addEventListener("change",drawAll)}catch(e){}
 new MutationObserver(drawAll).observe(document.documentElement,{attributes:true,attributeFilter:["data-theme"]});
 if(document.fonts&&document.fonts.ready)document.fonts.ready.then(drawAll);
+fetch("repos.json",{cache:"no-cache"}).then(r=>{if(!r.ok)throw new Error(r.status);return r.json()})
+  .then(d=>{P=d.repos||[];const g=document.getElementById("updated");if(g&&d.generated)g.textContent="Updated "+fmt(d.generated.slice(0,10));renderStats();renderChips();render()})
+  .catch(()=>{document.getElementById("list").innerHTML='<p class="empty">The project list could not be loaded. Refresh to try again.</p>'});
 renderChips();render();
 </script>
 
