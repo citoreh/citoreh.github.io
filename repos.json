@@ -1,8 +1,44 @@
 {
  "owner": "citoreh",
- "generated": "2026-10-16T09:52:54.763Z",
- "count": 35,
+ "generated": "2026-10-17T09:24:26.109Z",
+ "count": 36,
  "repos": [
+  {
+   "name": "Lissajous",
+   "title": "Lissajous Lab",
+   "fa": "",
+   "category": "other",
+   "description": "Lissajous Lab",
+   "pageTitle": "Lissajous Lab",
+   "pageDescription": "Feed one sine wave into the horizontal axis and another into the vertical, and the dot draws a Lissajous figure. Change the frequency ratio, shift the phase, and watch the shape answer back.",
+   "tags": [],
+   "language": "HTML",
+   "pushed": "2026-10-16",
+   "pushedAt": "2026-10-16T18:45:02Z",
+   "fork": false,
+   "repo": "https://github.com/citoreh/Lissajous",
+   "live": "https://citoreh.github.io/Lissajous/",
+   "thumb": "thumbs/Lissajous.jpg",
+   "shotAt": "2026-10-17T09:24:23.241Z"
+  },
+  {
+   "name": "Proportion",
+   "title": "Proportion Studio",
+   "fa": "",
+   "category": "other",
+   "description": "Proportion Studio",
+   "pageTitle": "Proportion Studio",
+   "pageDescription": "Set up the shoot, pick a wardrobe, then push any body part or garment bigger or smaller. Every slider starts at normal and the prompt rewrites itself as you go.",
+   "tags": [],
+   "language": "HTML",
+   "pushed": "2026-10-16",
+   "pushedAt": "2026-10-16T12:14:46Z",
+   "fork": false,
+   "repo": "https://github.com/citoreh/Proportion",
+   "live": "https://citoreh.github.io/Proportion/",
+   "thumb": "thumbs/Proportion.jpg",
+   "shotAt": "2026-10-17T09:24:26.072Z"
+  },
   {
    "name": "angle",
    "title": "Contact Angle",
@@ -156,28 +192,6 @@
    "live": "https://citoreh.github.io/film/",
    "thumb": "thumbs/film.jpg",
    "shotAt": "2026-10-15T04:14:27.065Z"
-  },
-  {
-   "name": "afarahani-com",
-   "title": "afarahani.com mirror",
-   "fa": "",
-   "category": "pub",
-   "description": "A static mirror of Ali Farahani's Wix site, captured with wget and hosted on GitHub Pages.",
-   "pageTitle": "",
-   "pageDescription": "",
-   "tags": [
-    "static site",
-    "mirror",
-    "Wix"
-   ],
-   "language": "HTML",
-   "pushed": "2026-09-11",
-   "pushedAt": "2026-09-11T01:27:51Z",
-   "fork": false,
-   "repo": "https://github.com/citoreh/afarahani-com",
-   "live": "https://citoreh.github.io/afarahani-com/",
-   "thumb": "thumbs/afarahani-com.jpg",
-   "shotAt": "2026-10-15T04:14:09.001Z"
   },
   {
    "name": "films",
