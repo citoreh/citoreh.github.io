@@ -1,17 +1,21 @@
 {
  "owner": "citoreh",
- "generated": "2026-10-17T16:26:50.536Z",
+ "generated": "2026-10-17T16:28:06.831Z",
  "count": 37,
  "repos": [
   {
    "name": "Surreal",
    "title": "Surreal Prompt Studio",
    "fa": "",
-   "category": "other",
-   "description": "Surreal Prompt Studio",
+   "category": "studio",
+   "description": "Builds surreal image prompts from a device, subject, meaning and medium. Fix the parts you care about, leave the rest to chance, and generate up to six ideas per run.",
    "pageTitle": "Surreal Prompt Studio",
    "pageDescription": "Combine a surreal device, a subject, a meaning and a medium. Fix the parts you care about, leave the rest to chance.",
-   "tags": [],
+   "tags": [
+    "web app",
+    "prompt",
+    "surreal"
+   ],
    "language": "HTML",
    "pushed": "2026-10-17",
    "pushedAt": "2026-10-17T15:56:40Z",
