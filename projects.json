@@ -365,6 +365,26 @@
     "translation"
    ],
    "live": false
+  },
+  "Lissajous": {
+   "title": "Lissajous Lab",
+   "category": "studio",
+   "description": "Feed one sine wave into each axis and a dot draws a Lissajous figure. Change the frequency ratio and phase, add a trace pen or drift, and play the curve as stereo tones.",
+   "tags": [
+    "web app",
+    "math",
+    "audio"
+   ]
+  },
+  "Proportion": {
+   "title": "Proportion Studio",
+   "category": "studio",
+   "description": "Set up a fashion shoot, then push any body part or garment bigger or smaller with sliders. The image prompt rewrites itself as you go, for Midjourney or Stable Diffusion.",
+   "tags": [
+    "web app",
+    "prompt",
+    "fashion"
+   ]
   }
  }
 }
