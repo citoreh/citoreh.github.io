@@ -385,6 +385,16 @@
     "prompt",
     "fashion"
    ]
+  },
+  "Surreal": {
+   "title": "Surreal Prompt Studio",
+   "category": "studio",
+   "description": "Builds surreal image prompts from a device, subject, meaning and medium. Fix the parts you care about, leave the rest to chance, and generate up to six ideas per run.",
+   "tags": [
+    "web app",
+    "prompt",
+    "surreal"
+   ]
   }
  }
 }
