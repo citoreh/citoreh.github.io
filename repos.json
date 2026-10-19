@@ -1,8 +1,26 @@
 {
  "owner": "citoreh",
- "generated": "2026-10-18T09:39:59.511Z",
- "count": 37,
+ "generated": "2026-10-19T10:48:40.647Z",
+ "count": 38,
  "repos": [
+  {
+   "name": "vibecodeschool-fa",
+   "title": "Vibecodeschool fa",
+   "fa": "",
+   "category": "fork",
+   "description": "Learn vibe coding free: the roadmap, 170 interactive lessons (Claude Code, OpenAI Codex, Google Antigravity, agentic AI, prompt engineering, Claude Cowork, ChatGPT Work), an 81-term AI coding dictionary, templates and an awesome list.",
+   "pageTitle": "",
+   "pageDescription": "",
+   "tags": [],
+   "language": "",
+   "pushed": "2026-10-19",
+   "pushedAt": "2026-10-19T04:21:39Z",
+   "fork": true,
+   "repo": "https://github.com/citoreh/vibecodeschool-fa",
+   "live": "https://citoreh.github.io/vibecodeschool-fa/",
+   "thumb": null,
+   "shotAt": null
+  },
   {
    "name": "Surreal",
    "title": "Surreal Prompt Studio",
