@@ -1,8 +1,26 @@
 {
  "owner": "citoreh",
- "generated": "2026-10-21T10:12:35.626Z",
- "count": 40,
+ "generated": "2026-10-22T10:14:03.565Z",
+ "count": 41,
  "repos": [
+  {
+   "name": "zirnevis",
+   "title": "Zirnevis",
+   "fa": "",
+   "category": "other",
+   "description": "Subtitle Generator",
+   "pageTitle": "Zirnevis",
+   "pageDescription": "Turn Persian audio or video into a timed SRT. Pick a speech engine, paste its API key, drop a file.",
+   "tags": [],
+   "language": "HTML",
+   "pushed": "2026-10-21",
+   "pushedAt": "2026-10-21T19:54:48Z",
+   "fork": false,
+   "repo": "https://github.com/citoreh/zirnevis",
+   "live": "https://citoreh.github.io/zirnevis/",
+   "thumb": "thumbs/zirnevis.jpg",
+   "shotAt": "2026-10-22T10:14:03.524Z"
+  },
   {
    "name": "Marz",
    "title": "Persia's Shifting Frontiers",
