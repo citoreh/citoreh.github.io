@@ -1,8 +1,26 @@
 {
  "owner": "citoreh",
- "generated": "2026-10-31T10:57:31.316Z",
- "count": 41,
+ "generated": "2026-11-07T12:46:45.660Z",
+ "count": 42,
  "repos": [
+  {
+   "name": "physiognomy",
+   "title": "Physiognomy Plate Builder",
+   "fa": "",
+   "category": "other",
+   "description": "Physiognomy Plate Builder",
+   "pageTitle": "Physiognomy Plate Builder",
+   "pageDescription": "Pick a facial type, set the sitter and the medium, and copy a prompt formatted for your image model. The types are a visual-storytelling convention for how a face reads on screen, not a claim about real personality.",
+   "tags": [],
+   "language": "HTML",
+   "pushed": "2026-11-02",
+   "pushedAt": "2026-11-02T23:36:27Z",
+   "fork": false,
+   "repo": "https://github.com/citoreh/physiognomy",
+   "live": "https://citoreh.github.io/physiognomy/",
+   "thumb": "thumbs/physiognomy.jpg",
+   "shotAt": "2026-11-07T12:46:45.628Z"
+  },
   {
    "name": "zirnevis",
    "title": "Zirnevis",
