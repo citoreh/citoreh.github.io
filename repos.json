@@ -1,8 +1,26 @@
 {
  "owner": "citoreh",
- "generated": "2026-11-11T12:44:36.155Z",
- "count": 42,
+ "generated": "2026-11-12T13:47:37.974Z",
+ "count": 43,
  "repos": [
+  {
+   "name": "Venus",
+   "title": "Venus Canon",
+   "fa": "",
+   "category": "other",
+   "description": "Venus Canon — portrait proportion studio",
+   "pageTitle": "Venus Canon",
+   "pageDescription": "An original portrait drawn on the classical canon of beauty: three equal facial thirds, a face five eye-widths across, a golden-ratio oval. Move one slider to shift every feature at once, or tune each detail and…",
+   "tags": [],
+   "language": "HTML",
+   "pushed": "2026-11-11",
+   "pushedAt": "2026-11-11T19:20:12Z",
+   "fork": false,
+   "repo": "https://github.com/citoreh/Venus",
+   "live": "https://citoreh.github.io/Venus/",
+   "thumb": "thumbs/Venus.jpg",
+   "shotAt": "2026-11-12T13:47:37.942Z"
+  },
   {
    "name": "physiognomy",
    "title": "Physiognomy Plate Builder",
